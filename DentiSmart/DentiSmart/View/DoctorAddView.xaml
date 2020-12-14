@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DentiSmart.View.DoctorAddView">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="Center" 
+                     Spacing="10">
+            <Label Text="Agregar Especialista"
+                   Style="{StaticResource MainBodyLabel}"
+                   TextColor="White"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <BoxView BackgroundColor="#2296f3" HeightRequest="50"/>
+                <Image Source="CurvedMask.png" Aspect="Fill"
+                   VerticalOptions="End"/>
+
+                <StackLayout Grid.Row="1" Padding="0,70,0,0">
+                    <Entry Placeholder="Nombre del Médico"
+                   Text="{Binding NewDoctor.Name}"
+                           ></Entry>
+                </StackLayout>
+
+                <Grid Grid.Row="2" Margin="0,30">
+
+                    <StackLayout>
+                        <Editor Placeholder="Descripcion"
+                   Text="{Binding NewDoctor.Description}"></Editor>
+                    </StackLayout>
+
+                </Grid>
+
+                <Grid Grid.Row="3" >
+
+                    <StackLayout>
+                        <Editor Placeholder="Experiencia"
+                   Text="{Binding NewDoctor.Experience}"></Editor>
+                    </StackLayout>
+
+                </Grid>
+
+                <StackLayout Padding="0,50,0,0" Grid.Row="4">
+
+                    <Button Text="Guardar"
+                        Command="{Binding SaveDoctorCommand}"
+                        TextColor="White"
+                        CornerRadius="20"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        BackgroundColor="#2296f3" ></Button>
+                </StackLayout>
+
+
+                <Image Source="dentist.png" 
+                   VerticalOptions="End" HorizontalOptions="Center"
+                   HeightRequest="100" WidthRequest="100"
+                   TranslationY="50"
+                   />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>

@@ -7,7 +7,6 @@
         <StackLayout Orientation="Horizontal" 
                      VerticalOptions="Center" 
                      Spacing="10">
-            <Image Source="contacto.png"/>
             <Label Text="Nuevo Servicio"
                    Style="{StaticResource MainBodyLabel}"
                    TextColor="White"

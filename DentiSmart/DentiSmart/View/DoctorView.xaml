@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DentiSmart.Behaviors"
+             x:Class="DentiSmart.View.DoctorView"
+             BackgroundColor="#2296f3">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="Center" 
+                     Spacing="10">
+            <Label Text="Especialistas"
+                   Style="{StaticResource MainBodyLabel}"
+                   TextColor="White"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     IconImageSource="plus.png"
+                     Command="{Binding AddDoctorCommand}"
+                    />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+
+        <ScrollView Orientation="Vertical">
+
+
+            <ListView ItemsSource="{Binding Doctors}"
+              Header="Servicios"
+              HasUnevenRows="True"
+              Margin="10"
+              FlowDirection="LeftToRight"
+              SelectedItem="{Binding CurrentDoctor}"
+              local:ItemTappedAttached.Command="{Binding ItemTappedCommand}"        
+              >
+
+
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="Center"
+                        Padding="0,15,0,0">
+                            <Label Text="Especialistas" 
+                                   Style="{StaticResource ProfileNameLabel}"
+                                   TextColor="White"
+                                   FontSize="25"
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+                <ListView.ItemTemplate>
+
+
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+
+                                <StackLayout>
+
+
+                                    <Frame HasShadow="True"
+                                           BorderColor="DarkGray"
+                                           CornerRadius="10"
+                                           Margin="10"
+                                           HeightRequest="600"
+                                           WidthRequest="400"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="CenterAndExpand">
+                                        <StackLayout>
+                                            <Image Source="specialist.png"
+                                   HorizontalOptions="Center" 
+                                           Margin="0,20"/>  
+                                            <Label Text="{Binding Name}"
+                               FontAttributes="Bold"
+                               FontSize="Large"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="Black"/>
+                                            <Label Text="Descripcion:"
+                                 HorizontalOptions="Center"
+                                 FontSize="Medium"
+                                 Padding="0,10,0,0"
+                               TextColor="Black"
+                                       FontAttributes="Bold"
+                                 />
+                                            <Label Text="{Binding Description}"
+                               HorizontalOptions="Center"
+                               Padding="0,10,0,0"
+                               FontAttributes="Italic"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="Black"/>
+                                            <Label Text="Experiencia:"
+                                 HorizontalOptions="Center"
+                                 FontSize="Medium"
+                                 Padding="0,10,0,0"
+                               TextColor="Black"
+                                       FontAttributes="Bold"
+                                 />
+                                            <Label Text="{Binding Experience}"
+                               HorizontalOptions="Center"
+                               FontSize="Medium"
+                               HorizontalTextAlignment="Center"
+                               Padding="0,10,0,0"
+                               TextColor="Black"/>
+                                        </StackLayout>
+                                    </Frame>
+
+
+                                   
+
+
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

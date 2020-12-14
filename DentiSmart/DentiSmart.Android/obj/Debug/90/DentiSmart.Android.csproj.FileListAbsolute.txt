@@ -485,3 +485,5 @@ C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\a
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\res\drawable\plus.png
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\res\drawable\teeth.png
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\res\drawable\service.png
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\res\drawable\dentist.png
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\res\drawable\specialist.png

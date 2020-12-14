@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DentiSmart.View.Doctor.xaml", "View/Doctor.xaml", typeof(global::DentiSmart.View.Doctor))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DentiSmart.View.DoctorAddView.xaml", "View/DoctorAddView.xaml", typeof(global::DentiSmart.View.DoctorAddView))]
 
 namespace DentiSmart.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Doctor.xaml")]
-    public partial class Doctor : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\DoctorAddView.xaml")]
+    public partial class DoctorAddView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Doctor));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DoctorAddView));
         }
     }
 }

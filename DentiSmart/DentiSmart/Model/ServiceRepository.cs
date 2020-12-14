@@ -22,37 +22,6 @@ namespace DentiSmart.Model
             return Services;
         }
 
-        public IList<Service> GetAllByFirstLetter(string letter)
-        {
-            var query = from q in Services
-                        where q.Name.StartsWith(letter)
-                        select q;
-            return query.ToList();
-        }
-
-        public
-                    ObservableCollection
-                    <Grouping<string, Service>>
-                    GetAllGrouped()
-        {
-            IEnumerable<Grouping<string, Service>> sorted = new Grouping<string, Service>[0];
-            if (Services != null)
-            {
-                sorted =
-                    from f in Services
-                    orderby f.Name
-                    group f by f.Name[0].ToString()
-                    into theGroup
-                    select
-                    new Grouping<string, Service>
-                        (theGroup.Key, theGroup);
-            }
-
-
-            return new
-                ObservableCollection
-                <Grouping<string, Service>>(sorted);
-        }
 
     }
 }
