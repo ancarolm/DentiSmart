@@ -7,9 +7,12 @@ C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\DentiSmart.AssemblyInfoInputs.cache
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\DentiSmart.AssemblyInfo.cs
-C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\DentiSmart.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\DentiSmart.dll
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\ref\DentiSmart.dll
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\DentiSmart.pdb
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\Doctor.xaml.g.cs
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\Historial.xaml.g.cs
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\ServiceListView.xaml.g.cs
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\ServiceView.xaml.g.cs
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\DentiSmart.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\XamlC.stamp

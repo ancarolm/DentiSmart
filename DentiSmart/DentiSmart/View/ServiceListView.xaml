@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DentiSmart.Behaviors"
+             x:Class="DentiSmart.View.ServiceListView"
+             BackgroundColor="#2296f3">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="Center" 
+                     Spacing="10">
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     IconImageSource="plus.png"
+                     Command="{Binding AddServiceCommand}"
+                    />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ScrollView>
+
+
+
+            <ListView ItemsSource="{Binding Services}"
+              Header="Servicios"
+              HasUnevenRows="True"
+              Margin="10" 
+              SelectedItem="{Binding CurrentService}"
+              local:ItemTappedAttached.Command="{Binding ItemTappedCommand}"        
+              >
+
+
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="Center"
+                        Padding="0,15,0,0">
+                            <Label Text="Servicios" 
+                                   Style="{StaticResource ProfileNameLabel}"
+                                   TextColor="White"
+                                   FontSize="25"
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+                <ListView.ItemTemplate>
+
+
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+
+                                <StackLayout>
+
+
+                                    <Frame CornerRadius="20" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"
+               HasShadow="True"
+               IsClippedToBounds="True"
+               Padding="0"
+               Margin="30"
+               BackgroundColor="White">
+
+
+                                        <StackLayout BackgroundColor="White"
+                             HeightRequest="100"
+                             WidthRequest="400"
+                             Margin="10">
+
+                                            <Grid RowSpacing="0">
+
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+
+                                                </Grid.RowDefinitions>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="Auto"/>
+
+                                                </Grid.ColumnDefinitions>
+
+
+                                                <StackLayout Margin="330,5,0,0">
+
+                                                    <Image Source="teeth.png" Grid.Row="0"
+                                                       Grid.Column="1"
+                                                       AnchorY="0"
+                                                       HorizontalOptions="StartAndExpand"
+                                                       />
+                                                    
+                                                </StackLayout>
+                                                    
+
+                                                
+
+                                                <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="0"
+                                                       Padding="20,5,0,0"
+                                                       Style="{StaticResource MainBodyLabel}"
+                                                       FontAttributes="Bold"/>
+                                                <Label Text="{Binding Description }" Grid.Row="1" Grid.Column="0"
+                                                       Padding="20,0,0,0"
+                                                       Style="{StaticResource MainBodyLabel}"
+                                                       FontAttributes="Italic"
+                                                       />
+                                                <Label Text="{Binding Total }" Grid.Row="2" Grid.Column="0"
+                                                       Padding="20,10,0,0"
+                                                       Style="{StaticResource MainBodyLabel}"
+                                                       FontAttributes="Bold"
+                                                       />
+
+
+                                            </Grid>
+                                        </StackLayout>
+
+
+                                    </Frame>
+
+
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
