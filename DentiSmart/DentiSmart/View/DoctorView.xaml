@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DentiSmart.Behaviors"
              x:Class="DentiSmart.View.DoctorView"
-             BackgroundColor="#2296f3">
+             BackgroundColor="White">
 
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" 
@@ -47,7 +47,7 @@
                         Padding="0,15,0,0">
                             <Label Text="Especialistas" 
                                    Style="{StaticResource ProfileNameLabel}"
-                                   TextColor="White"
+                                   TextColor="#2296f3"
                                    FontSize="25"
                                    FontAttributes="Bold"/>
                         </StackLayout>
@@ -64,13 +64,14 @@
 
 
                                     <Frame HasShadow="True"
-                                           BorderColor="DarkGray"
+                                           BorderColor="#E5E5E5"
                                            CornerRadius="10"
                                            Margin="10"
                                            HeightRequest="600"
                                            WidthRequest="400"
                                            HorizontalOptions="Center"
-                                           VerticalOptions="CenterAndExpand">
+                                           VerticalOptions="CenterAndExpand"
+                                           BackgroundColor="#E5E5E5">
                                         <StackLayout>
                                             <Image Source="specialist.png"
                                    HorizontalOptions="Center" 
