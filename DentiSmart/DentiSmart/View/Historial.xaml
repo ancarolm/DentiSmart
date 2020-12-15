@@ -22,7 +22,7 @@
                         Padding="0,5,0,0">
                             <Label Text="Historial" 
                                    Style="{StaticResource ProfileNameLabel}"
-                                   TextColor="#0096C7"
+                                   TextColor="#2296f3"
                                    FontSize="25"
                                    FontAttributes="Bold"/>
                         </StackLayout>
@@ -72,16 +72,13 @@
                                                 </Grid.ColumnDefinitions>
 
 
-                                                <Label Text="No" Grid.Row="0" Grid.Column="0"
+                                                <Label Text="{Binding Date}" Grid.Row="0" Grid.Column="0"
                                                        Padding="20,10,0,0"/>
-                                                <Label Text="sI" Grid.Row="1" Grid.Column="0"
+                                                <Label Text="{Binding Time}" Grid.Row="1" Grid.Column="0"
                                                        Padding="20,10,0,0"/>
-                                                <Label Text="MAYBE" Grid.Row="2" Grid.Column="0"
+                                                <Label Text="{Binding Action}" Grid.Row="2" Grid.Column="0"
                                                        Padding="20,10,0,0"
-                                                       TextColor="#19A6D0"/>    
-                                                <Label Text="AGORA" Grid.Row="2" Grid.Column="0"
-                                                       Padding="110,10,0,0"
-                                                       TextColor="#19A6D0"/>
+                                                       TextColor="#2296f3"/>    
 
 
                                             </Grid>

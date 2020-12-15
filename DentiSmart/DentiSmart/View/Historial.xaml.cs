@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DentiSmart.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace DentiSmart.View
         public Historial()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            this.BindingContext = new CitaListViewModel(Navigation);
         }
     }
 }
