@@ -25,7 +25,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <BoxView BackgroundColor="#52BAFA"
+                <BoxView BackgroundColor="#2296f3"
                          Grid.RowSpan="3"/>
 
 
@@ -34,24 +34,26 @@
                          HorizontalOptions="Center" 
                          Orientation="Vertical"
                          
-                         BackgroundColor="#52BAFA">
+                         BackgroundColor="#2296f3">
                  <Label
                          Text="Bienvenido a DentiSmart"
                          HorizontalOptions="Center"
                          FontSize="50"
-                         
+                         FontAttributes="Bold"
                          WidthRequest="300"
-                         TextColor="{OnPlatform Android=Black}"
+                         TextColor="{OnPlatform Android=White}"
                          />
                  <Label Text="Inicia sesión"
-                        TextColor="Black"
+                        TextColor="White"
                         FontSize="30"
+                        FontAttributes="Bold"
                         VerticalTextAlignment="End"
                         WidthRequest="300"
                     />
             </StackLayout>
 
-            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="{OnPlatform iOS=300,Android=300}" Orientation="Vertical"  >
+            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="{OnPlatform iOS=300,Android=300}" Orientation="Vertical" 
+                         Padding="30">
                     <!--Correo-->
                     <Label
                     Text="Correo"
@@ -120,10 +122,11 @@
             <StackLayout Grid.Row="6" HorizontalOptions="Center" Orientation="Vertical" >
                     <!--Log in-->
                     <Button Text="Log in"
-                              TextColor="Black"
+                              TextColor="White"
                               Font="Montserrat-Medium.otf"
                               FontSize="15"
-                              BackgroundColor="#52BAFA"
+                            FontAttributes="Bold"
+                              BackgroundColor="#2296f3"
                               BorderRadius="30"
                               BorderColor="#f2f2f2"
                               BorderWidth="1.5"
@@ -136,6 +139,7 @@
                             Text="Registrate aquí"
                             TextColor="Black"
                             FontSize="11"
+                            FontAttributes="Bold"
                             BackgroundColor="White"
                             IsEnabled="{Binding IsEnabledTxt}"
                             Clicked="SignUp_Clicked"

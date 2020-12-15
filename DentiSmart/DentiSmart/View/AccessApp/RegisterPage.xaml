@@ -22,7 +22,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-            <BoxView BackgroundColor="#4DDA82"
+            <BoxView BackgroundColor="#2296f3"
                      Grid.RowSpan="3"/>
 
 
@@ -30,14 +30,15 @@
             <StackLayout Grid.Row="2" HorizontalOptions="Center">
                 <Label
                     Text="Crear Cuenta"
-                            TextColor="Black"
+                            TextColor="White"
                             Font="Montserrat-Medium.otf"
                             FontSize="40"
                             WidthRequest="300"
+                    FontAttributes="Bold"
                     />
             </StackLayout>
 
-            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical"  >
+            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" Padding="30" >
                 <!--Correo-->
                 <Label Text="Correo"
                        FontSize="20"
@@ -153,10 +154,11 @@
                 
                 <!--Boton de registrar-->      
                 <Button Text="Registrarse"
-                        TextColor="Black"
+                        TextColor="White"
                         Font="Montserrat-Medium.otf"
+                        FontAttributes="Bold"
                         FontSize="{OnPlatform Android=15}"
-                        BackgroundColor="#4DDA82"
+                        BackgroundColor="#2296f3"
                         BorderWidth="1.5"
                         WidthRequest="300"
                         HeightRequest="50"
@@ -169,6 +171,7 @@
                             TextColor="{OnPlatform iOS=Black}"
                             FontSize="{OnPlatform Android=11,iOS=12}"
                             BackgroundColor="White"
+                      FontAttributes="Bold"
                             Clicked="NavToLogin_Clicked"
                             />
                 

@@ -19,3 +19,4 @@ C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\AccessApp\LoginPage.xaml.g.cs
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\AccessApp\RegisterPage.xaml.g.cs
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\DentiSmart.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\XamlC.stamp

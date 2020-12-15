@@ -43,7 +43,7 @@ namespace DentiSmart.ViewModel
 
         public async Task NavigateToCitaView()
         {
-            await Navigation.PushAsync(new Cita());
+            //await Navigation.PushAsync(new Cita());
         }
 
         public async Task NavigateToHomeView()
