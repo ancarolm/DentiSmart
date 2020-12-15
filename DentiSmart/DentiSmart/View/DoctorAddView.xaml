@@ -24,6 +24,8 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
                 </Grid.RowDefinitions>
 
                 <BoxView BackgroundColor="#2296f3" HeightRequest="50"/>
@@ -63,6 +65,18 @@
                         FontAttributes="Bold"
                         FontSize="15"
                         BackgroundColor="#2296f3" ></Button>
+                </StackLayout>
+
+                <StackLayout Padding="0,50,0,0" Grid.Row="5">
+
+                    <Button Text="Eliminar"
+                        Command="{Binding DeleteDoctorCommand}"
+                            CommandParameter="{Binding serviceId}"
+                        TextColor="White"
+                        CornerRadius="20"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        BackgroundColor="Red" ></Button>
                 </StackLayout>
 
 

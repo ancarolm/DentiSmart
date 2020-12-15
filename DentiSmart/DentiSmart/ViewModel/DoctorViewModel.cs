@@ -13,6 +13,7 @@ namespace DentiSmart.ViewModel
     public class DoctorViewModel 
     {
         public Command SaveDoctorCommand { get; set; }
+        public Command DeleteDoctorCommand { get; set; }
         public Model.Doctor NewDoctor { get; set; }
         private INavigation Navigation;
 
@@ -21,6 +22,8 @@ namespace DentiSmart.ViewModel
         {
             NewDoctor = new Model.Doctor();
             SaveDoctorCommand = new Command(async () => await SaveDoctor());
+            DeleteDoctorCommand = new Command(async () => await DeleteDoctor());
+
             Navigation = navigation;;
 
         }
@@ -29,6 +32,8 @@ namespace DentiSmart.ViewModel
         {
             NewDoctor = doctor;
             SaveDoctorCommand = new Command(async () => await SaveDoctor());
+            DeleteDoctorCommand = new Command(async () => await DeleteDoctor());
+
             Navigation = navigation;
         }
 
@@ -36,6 +41,14 @@ namespace DentiSmart.ViewModel
         {
             await App.Database.SaveDoctorAsync(NewDoctor);
             await Navigation.PopToRootAsync();
+        }
+
+        public async Task DeleteDoctor()
+        {
+
+            await App.Database.DeleteDoctorAsync(NewDoctor);
+            await Navigation.PopToRootAsync();
+
         }
     }
 }

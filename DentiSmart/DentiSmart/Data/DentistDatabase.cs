@@ -148,7 +148,7 @@ namespace DentiSmart.Data
 
         }
 
-        public Task<int> DeleteDoctorAsync(Service item)
+        public Task<int> DeleteDoctorAsync(Doctor item)
         {
             return database.DeleteAsync(item);
         }

@@ -29,7 +29,7 @@ namespace DentiSmart
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new RegisterPage());
+            MainPage = new NavigationPage(new DoctorView());
 
         }
 
