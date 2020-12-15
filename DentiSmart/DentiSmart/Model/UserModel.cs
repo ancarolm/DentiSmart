@@ -1,7 +1,7 @@
 ﻿using System;
 using SQLite;
 
-namespace Prueba.Model
+namespace DentiSmart.Model
 {
     public class UserModel
     {
