@@ -1,4 +1,5 @@
-﻿using DentiSmart.Model;
+﻿using app;
+using DentiSmart.Model;
 using DentiSmart.View;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace DentiSmart.ViewModel
 {
     public class CitaListViewModel
     {
-        public IList<Cita> Citas { get; set; }
+        public IList<CitaView> Citas { get; set; }
         public Command AddCitaCommand { get; set; }
         public Command BackHomeCommand { get; set; }
         private INavigation Navigation;
@@ -43,17 +44,17 @@ namespace DentiSmart.ViewModel
 
         public async Task NavigateToCitaView()
         {
-            await Navigation.PushAsync(new Cita());
+            await Navigation.PushAsync(new CitaView());
         }
 
         public async Task NavigateToHomeView()
         {
-            await Navigation.PushAsync(new DoctorView());
+            await Navigation.PushAsync(new CitaView());
         }
 
         public async Task NavigateToEditCitaView()
         {
-            await Navigation.PushAsync(new Cita(CurrentCita));
+            await Navigation.PushAsync(new CitaView(CurrentCita));
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
