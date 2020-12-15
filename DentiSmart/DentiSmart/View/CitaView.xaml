@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.CitaView"
+             BackgroundColor="LightBlue">
+
+    <StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="125" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+
+        <BoxView BackgroundColor="LightBlue"/>
+        <Label Text="Programar Cita" 
+               FontSize="30" 
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="0,1,0,0"
+               BackgroundColor="LightBlue"/>
+
+
+        <StackLayout Orientation="Vertical" 
+                     Grid.Row="1">
+
+            <Label Text="Fecha" 
+               FontSize="20" 
+               TextColor="White"
+               VerticalTextAlignment="End"/>
+
+            <DatePicker MinimumDate="01/01/2020"
+            MaximumDate="12/31/2021"
+            Date="12/14/2020"
+             DateSelected="{Binding date"     />
+
+
+                <Label Text="" 
+               FontSize="20" 
+               TextColor="White"
+               VerticalTextAlignment="End"/>
+
+                <Picker Title="Hora:"
+                TitleColor="White"
+                        FontSize="20" 
+                        SelectedIndex="{Binding time">
+                    <Picker.Items>
+                        <x:String>8:00 AM</x:String>
+                        <x:String>10:00 AM</x:String>
+                        <x:String>1:00 PM</x:String>
+                        <x:String>4:00 PM</x:String>
+
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="{Binding SaveCitaCommand}" 
+               FontSize="20" 
+               TextColor="White"
+               VerticalTextAlignment="End"/>
+
+              
+
+                <Picker Title="Procedimiento"
+        TitleColor="White"
+                        FontSize="20" >
+                    <Picker.Items>
+                        <x:String>Extraccion dental</x:String>
+                        <x:String>Limpieza</x:String>
+                        <x:String>Ortodoncia</x:String>
+                        <x:String>Tratamiento de nervios</x:String>
+                        
+                    </Picker.Items>
+                </Picker>
+
+                <Button Command="{Binding SaveCitaCommand}" 
+                    Text="Agendar" 
+                    TextColor="Black"
+                    BackgroundColor="Green"
+                    CornerRadius="30"
+                    Margin="1,50,0,1"/>
+
+       
+
+            </StackLayout>
+ 
+
+    </Grid>
+    </StackLayout>
+
+</ContentPage>
