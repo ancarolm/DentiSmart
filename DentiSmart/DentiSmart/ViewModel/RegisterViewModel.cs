@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
 using Xamarin.Forms;
-using Prueba.Model;
-using Prueba.Views.AccessApp;
+using DentiSmart.Model;
+using DentiSmart.View.AccessApp;
 
-namespace Prueba.ViewModel
+namespace DentiSmart.ViewModel
 {
     public class RegisterViewModel : BaseViewModel
     {
