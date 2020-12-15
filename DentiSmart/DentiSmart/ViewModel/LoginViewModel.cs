@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
-using Prueba.Model;
-using Prueba.Views;
+using DentiSmart.Model;
+using DentiSmart.View;
 
 using Xamarin.Forms;
 
-namespace Prueba.ViewModel
+namespace DentiSmart.ViewModel
 {
     public class LoginViewModel : BaseViewModel
     {
