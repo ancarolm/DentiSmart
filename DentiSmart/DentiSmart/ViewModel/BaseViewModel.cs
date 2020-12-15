@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Prueba.ViewModel
+namespace DentiSmart.ViewModel
 {
     public class BaseViewModel : INotifyPropertyChanged
 
