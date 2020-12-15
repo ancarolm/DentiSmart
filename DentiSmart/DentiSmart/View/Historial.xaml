@@ -1,141 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DentiSmart.View.Historial">
+             x:Class="DentiSmart.View.Historial"
+             BackgroundColor="White">
     <ContentPage.Content>
         <ScrollView>
 
-            <StackLayout BackgroundColor="White">
 
-                <Label Text="Historial" Style="{StaticResource ProfileNameLabel}"
-                   Padding="0,70,0,0"
-                   FontSize="Large"
-                   TextColor="#0096C7"/>
-
-                <Label Text="Pendientes" Style="{StaticResource MainBodyLabel}"
-                   FontSize="Medium"
-                   Padding="35,20,0,0"/>
+            <ListView ItemsSource="{Binding Citas}"
+              Header="Servicios"
+              HasUnevenRows="True"
+              Margin="10"         
+              >
 
 
-                <Frame CornerRadius="20" 
-               HorizontalOptions="Center" 
-               VerticalOptions="Center"
-               HasShadow="True"
-               IsClippedToBounds="True"
-               Padding="0"
-               Margin="10"
-               BackgroundColor="#E5E5E5">
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="Center"
+                        Padding="0,5,0,0">
+                            <Label Text="Historial" 
+                                   Style="{StaticResource ProfileNameLabel}"
+                                   TextColor="#0096C7"
+                                   FontSize="25"
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+                <ListView.ItemTemplate>
 
 
-                    <StackLayout BackgroundColor="#E5E5E5"
-                             HeightRequest="100"
-                             WidthRequest="400"
-                             Margin="10">
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout BackgroundColor="White">
 
-                        <Grid RowSpacing="0">
+                                    <Label Text="Historial" Style="{StaticResource ProfileNameLabel}"
+                                           Padding="0,70,0,0"
+                                           FontSize="Large"
+                                           TextColor="#0096C7"/>        
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-
-                            </Grid.RowDefinitions>
-
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-
-                            </Grid.ColumnDefinitions>
-
-
-                            <Label Text="Limpieza" Grid.Row="0" Grid.Column="0"
-                               Padding="20,10,0,0"/>
-                            <Label Text="Dr. Ricardo Rodriguez" Grid.Row="1" Grid.Column="0"
-                               Padding="20,10,0,0"/>
-                            <Label Text="26/10/2020" Grid.Row="2" Grid.Column="0"
-                               Padding="20,10,0,0"
-                               TextColor="#19A6D0"/>
-                            <Label Text="3:30PM" Grid.Row="2" Grid.Column="0"
-                               Padding="110,10,0,0"
-                               TextColor="#19A6D0"/>
-
-                            <Label Text="Cancelar" Grid.Row="0" Grid.Column="1"
-                               Padding="150,10,0,0"
-                               TextColor="Red"
-                               FontSize="17"
-                               FontAttributes="Bold">
-
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding CancelCommand}" />
-                                </Label.GestureRecognizers>
-                            </Label>
+                                    <Frame CornerRadius="20" 
+                                           HorizontalOptions="Center" 
+                                           VerticalOptions="Center"
+                                           HasShadow="True"
+                                           IsClippedToBounds="True"
+                                           Padding="0"
+                                           Margin="10"
+                                           BackgroundColor="#E5E5E5">
 
 
-                        </Grid>
-                    </StackLayout>
+                                        <StackLayout BackgroundColor="#E5E5E5"
+                                                     HeightRequest="100"
+                                                     WidthRequest="400"
+                                                     Margin="10">
+
+                                            <Grid RowSpacing="0">
+
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+
+                                                </Grid.RowDefinitions>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="Auto"/>
+
+                                                </Grid.ColumnDefinitions>
 
 
-                </Frame>
-
-                <Label Text="Anteriores" Style="{StaticResource MainBodyLabel}"
-                   FontSize="Medium"
-                   Padding="35,15,0,0"/>
-                <Frame CornerRadius="20" 
-               HorizontalOptions="Center" 
-               VerticalOptions="Center"
-               HasShadow="True"
-               IsClippedToBounds="True"
-               Padding="0"
-               Margin="10"
-               BackgroundColor="#E5E5E5">
+                                                <Label Text="No" Grid.Row="0" Grid.Column="0"
+                                                       Padding="20,10,0,0"/>
+                                                <Label Text="sI" Grid.Row="1" Grid.Column="0"
+                                                       Padding="20,10,0,0"/>
+                                                <Label Text="MAYBE" Grid.Row="2" Grid.Column="0"
+                                                       Padding="20,10,0,0"
+                                                       TextColor="#19A6D0"/>    
+                                                <Label Text="AGORA" Grid.Row="2" Grid.Column="0"
+                                                       Padding="110,10,0,0"
+                                                       TextColor="#19A6D0"/>
 
 
-                    <StackLayout BackgroundColor="#E5E5E5"
-                             HeightRequest="100"
-                             WidthRequest="400"
-                             Margin="10">
-
-                        <Grid RowSpacing="0">
-
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-
-                            </Grid.RowDefinitions>
-
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-
-                            </Grid.ColumnDefinitions>
+                                            </Grid>
+                                        </StackLayout>
 
 
-                            <Label Text="Limpieza" Grid.Row="0" Grid.Column="0"
-                               Padding="20,10,0,0"/>
-                            <Label Text="Dr. Ricardo Rodriguez" Grid.Row="1" Grid.Column="0"
-                               Padding="20,10,0,0"/>
-                            <Label Text="26/10/2020" Grid.Row="2" Grid.Column="0"
-                               Padding="20,10,0,0"
-                               TextColor="#19A6D0"/>
-                            <Label Text="3:30PM" Grid.Row="2" Grid.Column="0"
-                               Padding="110,10,0,0"
-                               TextColor="#19A6D0"/>
+                                    </Frame>
 
-                            <Label Text="Completa" Grid.Row="0" Grid.Column="1"
-                               Padding="150,10,0,0"
-                               TextColor="#039C7C"
-                               FontSize="17"
-                               FontAttributes="Bold"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
 
-
-                        </Grid>
-                    </StackLayout>
-
-
-                </Frame>
-
-            </StackLayout>
+            </ListView>
 
         </ScrollView>
     </ContentPage.Content>

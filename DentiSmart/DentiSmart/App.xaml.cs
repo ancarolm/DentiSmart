@@ -28,7 +28,7 @@ namespace DentiSmart
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new Historial());
         }
 
         protected override void OnStart()

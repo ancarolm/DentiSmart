@@ -17,3 +17,4 @@ C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\DoctorAddView.xaml.g.cs
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\DoctorView.xaml.g.cs
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart\obj\Debug\netstandard2.0\View\Cita.xaml.g.cs
