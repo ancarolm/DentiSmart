@@ -488,3 +488,16 @@ C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\r
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\res\drawable\dentist.png
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\res\drawable\specialist.png
 C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\res\drawable\home.png
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\CommonServiceLocator.dll
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\GalaSoft.MvvmLight.dll
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\GalaSoft.MvvmLight.dll.mdb
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\GalaSoft.MvvmLight.Extras.dll.mdb
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\GalaSoft.MvvmLight.Platform.dll.mdb
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\System.ComponentModel.dll
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\System.ObjectModel.dll
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\assets\System.Reflection.Extensions.dll
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\src\crc64e6bbec0cebca6418\ActivityBase.java
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\src\crc64e6bbec0cebca6418\DialogService_OnDismissListener.java
+C:\Users\Usuario\Desktop\DentiSmart\DentiSmart\DentiSmart.Android\obj\Debug\90\android\src\crc64eb2743c2f6ea027b\ObservableAdapter_1.java

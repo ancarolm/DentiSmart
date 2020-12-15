@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "E1k/L/Kw2SAiG5MbgQhIHflDEewqfmagw43uNz3ZMUw+eqzO6F7MqGXPmTiI9bdy4r2QSId4ATTVo2I4rv1syQ==",
+  "dgSpecHash": "G9lnpd+HNiGMtnrv65XJEWHeun+x1z1Ply16G8n6cfe9VEaiW1RGdPX2teMyIL6Ln8iikBL9IEN6m+P1ibqf4Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\DentiSmart\\DentiSmart\\DentiSmart.iOS\\DentiSmart.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.primitives\\4.0.1\\microsoft.win32.primitives.4.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlite-net-pcl\\1.3.3\\sqlite-net-pcl.1.3.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.5\\sqlitepclraw.bundle_green.1.1.5.nupkg.sha512",
