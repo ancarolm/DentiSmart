@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using Prueba.ViewModel;
+using DentiSmart.ViewModel;
 
-namespace Prueba.Views.AccessApp
+namespace DentiSmart.View.AccessApp
 {
     public partial class RegisterPage : ContentPage
     {
