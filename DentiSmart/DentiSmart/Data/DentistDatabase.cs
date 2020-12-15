@@ -16,81 +16,8 @@ namespace DentiSmart.Data
             database = new SQLiteAsyncConnection(dbpath);
             database.CreateTableAsync<Service>().Wait();
             database.CreateTableAsync<Doctor>().Wait();
-            database.CreateTableAsync<UserModel>().Wait();
-            database.CreateTableAsync<PersonModel>().Wait();
+            database.CreateTableAsync<Cita>().Wait();
 
-        }
-
-        public Task<UserModel> GetUserModelAynsc(int id)
-        {
-            return database.Table<UserModel>()
-                            .Where(i => i.UserID == id)
-                            .FirstOrDefaultAsync();
-        }
-
-        /* SELECT*/
-        public Task<List<UserModel>> GetUserModel()
-        {
-            return database.Table<UserModel>().ToListAsync();
-        }
-
-        /*GUARDAR Y ACTUALIZAR ()*/
-        public Task<int> SaveUserModelAsync(UserModel userModel)
-        {
-            if (userModel.UserID != 0)
-            {
-                return database.UpdateAsync(userModel);
-            }
-            else
-            {
-                return database.InsertAsync(userModel);
-            }
-        }
-
-        /*ELIMINAR () */
-        public Task<int> DeleteUserModelAsync(UserModel userModel)
-        {
-            return database.DeleteAsync(userModel);
-        }
-
-        public Task<List<UserModel>> GetUsersValidate(string email, string password)
-        {
-            return database.QueryAsync<UserModel>("SELECT * FROM UserModel WHERE EmailField = '" + email + "' AND PasswordField = '" + password + "'");
-        }
-
-
-
-
-        public Task<PersonModel> GetPersonModelAynsc(int id)
-        {
-            return database.Table<PersonModel>()
-                            .Where(i => i.PersonID == id)
-                            .FirstOrDefaultAsync();
-        }
-
-        /*SELECT ()*/
-        public Task<List<PersonModel>> GetPersonModel()
-        {
-            return database.Table<PersonModel>().ToListAsync();
-        }
-
-        /*GUARDAR Y ACTUALIZAR ()*/
-        public Task<int> SavePersonModelAsync(PersonModel personModel)
-        {
-            if (personModel.PersonID != 0)
-            {
-                return database.UpdateAsync(personModel);
-            }
-            else
-            {
-                return database.InsertAsync(personModel);
-            }
-        }
-
-        /*ELIMINAR () */
-        public Task<int> DeletePersonModelAsync(PersonModel personModel)
-        {
-            return database.DeleteAsync(personModel);
         }
 
         public async Task<List<Service>> GetServiceAsync()
@@ -148,7 +75,38 @@ namespace DentiSmart.Data
 
         }
 
-        public Task<int> DeleteDoctorAsync(Doctor item)
+        public Task<int> DeleteDoctorAsync(Service item)
+        {
+            return database.DeleteAsync(item);
+        }
+
+
+        public async Task<List<Cita>> GetCitaAsync()
+        {
+            return await database.Table<Cita>().ToListAsync();
+        }
+
+        public Task<Cita> GetCitaAsync(int id)
+        {
+            return database.Table<Cita>()
+                .Where(i => i.citaID == id)
+                .FirstOrDefaultAsync();
+        }
+
+        public Task<int> SaveCitaAsync(Cita item)
+        {
+            if (item.citaID != 0)
+            {
+                return database.UpdateAsync(item);
+            }
+            else
+            {
+                return database.InsertAsync(item);
+            }
+
+        }
+
+        public Task<int> DeleteCitaAsync(Service item)
         {
             return database.DeleteAsync(item);
         }
