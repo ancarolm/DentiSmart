@@ -18,10 +18,10 @@ namespace DentiSmart.ViewModel
         public Command AddCitaCommand { get; set; }
         public Command BackHomeCommand { get; set; }
         private INavigation Navigation;
-        private Cita _currentCita;
+        private CitaView _currentCita;
         public Command ItemTappedCommand { get; set; }
         
-        public Cita CurrentCita
+        public CitaView CurrentCita
         {
             get { return _currentCita; }
             set
@@ -34,10 +34,10 @@ namespace DentiSmart.ViewModel
         public CitaListViewModel(INavigation navigation)
         {
             CitaRepository repository = new CitaRepository();
-            Citas = repository.GetAll();
+            
             Navigation = navigation;
             AddCitaCommand = new Command(async () => await NavigateToCitaView());
-            ItemTappedCommand = new Command(async () => await NavigateToEditCitaView());
+            
             BackHomeCommand = new Command(async () => await NavigateToHomeView());
 
         }
@@ -52,10 +52,7 @@ namespace DentiSmart.ViewModel
             await Navigation.PushAsync(new CitaView());
         }
 
-        public async Task NavigateToEditCitaView()
-        {
-           await Navigation.PushAsync(new CitaView(CurrentCita));
-        }
+     
 
         public event PropertyChangedEventHandler PropertyChanged;
 
