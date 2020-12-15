@@ -27,8 +27,8 @@ namespace DentiSmart.View
             {
                 new Menu{ Page= new Historial(),MenuTitle="Mi Perfil",  MenuDetail="Mi perfil",icon="user.png"},
                 new Menu{ Page= new CitaView(),MenuTitle="Historial Citas",  MenuDetail="Historial",icon="date.png"},
-                new Menu{ Page= new Doctor(),MenuTitle="Doctores",  MenuDetail="Docs",icon="docs.png"},
-                new Menu{ Page= new Servicios(),MenuTitle="Servicios",  MenuDetail="Servicios",icon="servicios.png"},
+                new Menu{ Page= new DoctorView(),MenuTitle="Doctores",  MenuDetail="Docs",icon="docs.png"},
+                new Menu{ Page= new ServiceListView(),MenuTitle="Servicios",  MenuDetail="Servicios",icon="servicios.png"},
                 new Menu{ Page= new LoginPage(),MenuTitle="Cerrar sesion",  MenuDetail="Cerrar",icon="salir.png"}
             };
             ListMenu.ItemsSource = menu;
