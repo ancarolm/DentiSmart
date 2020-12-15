@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Prueba.Views.AccessApp.LoginPage"
+    BackgroundColor="White">
+    <ContentPage.Content>
+         <ScrollView>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/> <!---->
+                    <RowDefinition Height="Auto"/>  <!--1-->
+                    <RowDefinition Height="Auto"/>  <!--2-->
+                    <RowDefinition Height="Auto"/>  <!--3-->
+                    <RowDefinition Height="Auto"/>  <!--4-->
+                    <RowDefinition Height="Auto"/>  <!--5-->
+                    <RowDefinition Height="Auto"/>  <!--6-->
+                    <RowDefinition Height="Auto"/>  <!--8-->
+
+
+            </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <BoxView BackgroundColor="#52BAFA"
+                         Grid.RowSpan="3"/>
+
+
+
+                <StackLayout Grid.Row="2" 
+                         HorizontalOptions="Center" 
+                         Orientation="Vertical"
+                         
+                         BackgroundColor="#52BAFA">
+                 <Label
+                         Text="Bienvenido a DentiSmart"
+                         HorizontalOptions="Center"
+                         FontSize="50"
+                         
+                         WidthRequest="300"
+                         TextColor="{OnPlatform Android=Black}"
+                         />
+                 <Label Text="Inicia sesión"
+                        TextColor="Black"
+                        FontSize="30"
+                        VerticalTextAlignment="End"
+                        WidthRequest="300"
+                    />
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="{OnPlatform iOS=300,Android=300}" Orientation="Vertical"  >
+                    <!--Correo-->
+                    <Label
+                    Text="Correo"
+                    FontSize="20"
+                    TextColor="Black"
+                    />
+                <Frame
+                    HasShadow="{OnPlatform Android=true,iOS=false}"
+                    Padding="{OnPlatform Android=8,iOS=0}"
+                    CornerRadius="{OnPlatform Android=7}"
+                    >
+                <Entry
+                    Placeholder="ejemplo@gmail.com"
+                    Keyboard="Email"
+                    MaxLength="25"
+                    Text="{Binding EmailTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    FontSize="16"
+                    />
+                     </Frame>   
+            </StackLayout>
+
+             <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                  
+                 <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="0">
+                        <!--Contraseña-->
+                        <Label Text="Contraseña"
+                               FontSize="20"
+                               TextColor="Black"
+                               VerticalOptions="Center"
+                               WidthRequest="150"/>
+                     
+                    </StackLayout> 
+                 <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=8,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}"
+                     >
+
+                   <Entry
+                    Placeholder="******************"
+                    MaxLength="25"
+                    IsPassword="True"
+                    FontSize="15"
+                    Text="{Binding PasswordTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    
+                    />
+                    
+                 </Frame>
+
+            </StackLayout>
+
+
+             <StackLayout Grid.Row="5" HorizontalOptions="Center" Padding="0">
+                   <ActivityIndicator
+                       IsRunning="{Binding IsRunningTxt}"
+                       IsVisible="{Binding IsVisibleTxt}"
+                       Color="Black"
+                       Scale="0.8"
+                     
+                       />
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="6" HorizontalOptions="Center" Orientation="Vertical" >
+                    <!--Log in-->
+                    <Button Text="Log in"
+                              TextColor="Black"
+                              Font="Montserrat-Medium.otf"
+                              FontSize="15"
+                              BackgroundColor="#52BAFA"
+                              BorderRadius="30"
+                              BorderColor="#f2f2f2"
+                              BorderWidth="1.5"
+                              WidthRequest="40"
+                              HeightRequest="50"
+                              Command="{Binding LoginCommand}"
+                              IsEnabled="{Binding IsEnabledTxt}" 
+                    />
+                  <Button
+                            Text="Registrate aquí"
+                            TextColor="Black"
+                            FontSize="11"
+                            BackgroundColor="White"
+                            IsEnabled="{Binding IsEnabledTxt}"
+                            Clicked="SignUp_Clicked"
+                            />
+              
+            </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
