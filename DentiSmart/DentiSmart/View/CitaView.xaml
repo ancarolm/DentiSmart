@@ -30,10 +30,10 @@
                TextColor="White"
                VerticalTextAlignment="End"/>
 
-            <DatePicker MinimumDate="01/01/2020"
+                <DatePicker MinimumDate="01/01/2020"
             MaximumDate="12/31/2021"
             Date="12/14/2020"
-             DateSelected="{Binding date"     />
+             DateSelected="{Binding Date}"     />
 
 
                 <Label Text="" 
@@ -44,7 +44,7 @@
                 <Picker Title="Hora:"
                 TitleColor="White"
                         FontSize="20" 
-                        SelectedIndex="{Binding time">
+                        SelectedIndex="{Binding time}">
                     <Picker.Items>
                         <x:String>8:00 AM</x:String>
                         <x:String>10:00 AM</x:String>

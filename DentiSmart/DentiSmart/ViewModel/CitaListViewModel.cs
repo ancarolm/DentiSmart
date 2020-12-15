@@ -54,7 +54,7 @@ namespace DentiSmart.ViewModel
 
         public async Task NavigateToEditCitaView()
         {
-            await Navigation.PushAsync(new CitaView(CurrentCita));
+           await Navigation.PushAsync(new CitaView(CurrentCita));
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

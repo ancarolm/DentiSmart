@@ -7,18 +7,20 @@
             Title="Menú"
             BackgroundColor="#5e5a5a"
             Padding="0,40,0,0">
-            <Label Text="My menu"/>
-            <ListView BackgroundColor="White" x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ImageCell TextColor="Black" DetailColor="Black" Height="25" 
+            <StackLayout>
+                <Label Text="My menu"/>
+                <ListView BackgroundColor="White" x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell TextColor="Black" DetailColor="Black" Height="25" 
                                    Text="{Binding MenuTitle}"
                                    Detail="{Binding MenuDetail}"
                                    ImageSource="{Binding icon}">
-                        </ImageCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
    </MasterDetailPage>

@@ -22,7 +22,7 @@ namespace DentiSmart.View
         }
         public void MyMenu()
         {
-            Detail = new NavigationPage(new Doctor());
+            Detail = new NavigationPage(new MainPage());
             List<Menu> menu = new List<Menu>
             {
                 new Menu{ Page= new Historial(),MenuTitle="Mi Perfil",  MenuDetail="Mi perfil",icon="user.png"},
