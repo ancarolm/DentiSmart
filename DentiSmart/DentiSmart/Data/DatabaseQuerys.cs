@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using SQLite;
-using Prueba.Model;
+using DentiSmart.Model;
 
-namespace Prueba.Database
+namespace DentiSmart.Data
 {
     public class DatabaseQuerys
     {
