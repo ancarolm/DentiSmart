@@ -15,6 +15,7 @@ namespace DentiSmart.ViewModel
     {
         public IList<Service> Services { get; set; }
         public Command AddServiceCommand { get; set; }
+        public Command BackHomeCommand { get; set; }
         private INavigation Navigation;
         private Service _currentService;
         public Command ItemTappedCommand { get; set; }
@@ -36,11 +37,18 @@ namespace DentiSmart.ViewModel
             Navigation = navigation;
             AddServiceCommand = new Command(async () => await NavigateToServiceView());
             ItemTappedCommand = new Command(async () => await NavigateToEditServiceView());
+            BackHomeCommand = new Command(async () => await NavigateToHomeView());
+
         }
 
         public async Task NavigateToServiceView()
         {
             await Navigation.PushAsync(new ServiceView());
+        }
+
+        public async Task NavigateToHomeView()
+        {
+            await Navigation.PushAsync(new DoctorView());
         }
 
         public async Task NavigateToEditServiceView()

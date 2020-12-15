@@ -17,8 +17,14 @@
     </NavigationPage.TitleView>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+"
+        <ToolbarItem Text="-"
+                     IconImageSource="home.png"
+                     Order="Primary"
+                     Command="{Binding BackHomeCommand}"/>
+
+        <ToolbarItem Text="Agregar servicio"
                      IconImageSource="plus.png"
+                     Order="Secondary"
                      Command="{Binding AddServiceCommand}"
                     />
     </ContentPage.ToolbarItems>

@@ -15,6 +15,7 @@ namespace DentiSmart.ViewModel
     {
         public IList<Cita> Citas { get; set; }
         public Command AddCitaCommand { get; set; }
+        public Command BackHomeCommand { get; set; }
         private INavigation Navigation;
         private Cita _currentCita;
         public Command ItemTappedCommand { get; set; }
@@ -36,11 +37,18 @@ namespace DentiSmart.ViewModel
             Navigation = navigation;
             AddCitaCommand = new Command(async () => await NavigateToCitaView());
             ItemTappedCommand = new Command(async () => await NavigateToEditCitaView());
+            BackHomeCommand = new Command(async () => await NavigateToHomeView());
+
         }
 
         public async Task NavigateToCitaView()
         {
             await Navigation.PushAsync(new Cita());
+        }
+
+        public async Task NavigateToHomeView()
+        {
+            await Navigation.PushAsync(new DoctorView());
         }
 
         public async Task NavigateToEditCitaView()
