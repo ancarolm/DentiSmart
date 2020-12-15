@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
 using Xamarin.Forms;
-using Prueba.Model;
+using DentiSmart.Model;
 
-namespace Prueba.ViewModel
+namespace DentiSmart.ViewModel
 {
     public class PersonViewModels : BaseViewModel
     {
