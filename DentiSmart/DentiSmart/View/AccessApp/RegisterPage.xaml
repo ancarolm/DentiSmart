@@ -6,7 +6,7 @@
     BackgroundColor="White">
 
     <ContentPage.Content>
-         <Grid RowSpacing="{OnPlatform iOS=25,Android=20}">
+         <Grid RowSpacing="20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/> 
                     <RowDefinition Height="Auto"/>
@@ -37,7 +37,7 @@
                     />
             </StackLayout>
 
-            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="{OnPlatform iOS=300,Android=300}" Orientation="Vertical"  >
+            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical"  >
                 <!--Correo-->
                 <Label Text="Correo"
                        FontSize="20"
